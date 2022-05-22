@@ -39,7 +39,7 @@ export const setPattern = (
   pattern: TPattern
 ): TBoard => {
   const board = clearBoard(height, width);
-  pattern.map((point) => {
+  pattern.forEach((point) => {
     board[point[0]][point[1]] = true;
   });
   return board;
@@ -51,7 +51,7 @@ export const checkNextTickAlive = (
   y: number
 ): boolean => {
   let sum = 0;
-  neighbors.map((neighbor) => {
+  neighbors.forEach((neighbor) => {
     board[y + neighbor[0]] && board[y + neighbor[0]][x + neighbor[1]] && sum++;
   });
   if (board[y][x]) {
