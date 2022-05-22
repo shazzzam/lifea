@@ -1,0 +1,43 @@
+.btn {
+  padding: 8px 16px;
+
+  color: white;
+
+  border: 2px solid var(--color-black);
+  border-radius: 8px;
+  background-color: var(--color-black);
+
+  font-size: 20px;
+}
+
+.btn:disabled {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.primary {
+  border-color: var(--color-blue);
+  background-color: var(--color-blue);
+}
+
+.primary:disabled {
+  color: var(--color-blue);
+}
+
+.info {
+  border-color: var(--color-green);
+  background-color: var(--color-green);
+}
+
+.info:disabled {
+  color: var(--color-green);
+}
+
+.danger {
+  border-color: var(--color-red);
+  background-color: var(--color-red);
+}
+
+.danger:disabled {
+  color: var(--color-red);
+}

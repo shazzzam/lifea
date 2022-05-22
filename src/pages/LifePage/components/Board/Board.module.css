@@ -1,0 +1,16 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid white;
+  background-color: black;
+}
+
+.alive {
+  background-color: white;
+}
